@@ -1,0 +1,280 @@
+<html>
+<head>
+	<title>MY GALLERY</title>
+</head>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1"> 
+
+<style>
+* {
+	box-sizing: border-box;
+  }
+
+body {
+		background-image: url('images/daisy3.jpg');
+		background-size: 30%;
+		padding: 20px;
+		text-align: center;
+		color: maroon;
+     }
+
+/* Center website */
+.main {
+		max-width: 1000px;
+		margin: auto;
+	  }
+
+h1 {
+		font-size: 50px;
+		word-break: break-all;
+   }
+
+.row {
+        margin: 10px -16px;
+     }
+
+/* Add padding BETWEEN each column */
+.row,
+.row > .column {
+				padding: 8px;
+			   }
+
+/* Create three equal columns that floats next to each other */
+.column {
+		float: left;
+		width: 33.33%;
+		display: none; /* Hide all elements by default */
+        }
+
+/* Clear floats after rows */ 
+.row:after {
+			content: "";
+			display: table;
+			clear: both;
+		   }
+
+/* Content */
+.content {
+			background-color: white;
+			padding: 10px;
+		 }
+
+/* The "show" class is added to the filtered elements */
+.show {
+        display: block;
+      }
+
+/* Style the buttons */
+.btn {
+		border: none;
+		outline: none;
+		padding: 12px 16px;
+		background-color: salmon;
+		border: double;
+		cursor: pointer;
+	  }
+
+.btn:hover {
+		    background-color: #ddd;
+           }
+
+.btn.active {
+			background-color: #666;
+			color: white;
+			}
+			
+img {
+		border: double;
+    }   
+</style>
+
+<body>
+
+<!-- MAIN (Center website) -->
+<div class="main">
+
+<h1 align="center" style="color:maroon"><font size="15" face="Comic Sans MS">WELCOME TO MY PICTURE GALLERY</font></h1>
+
+<audio controls autoplay>
+    <source src="audio/unstoppable.mp3" type="audio/ogg">
+</audio>
+
+<hr>
+		<center style="color:black"><big><em><b>Here is my picture gallery</b></em></big></center>
+<p></p>
+
+<div id="myBtnContainer">
+  <button class="btn active" onclick="filterSelection('all')">Show all</button>
+  <button class="btn" onclick="filterSelection('Me')">Me</button>
+  <button class="btn" onclick="filterSelection('Family')">Family</button>
+  <button class="btn" onclick="filterSelection('Friends')">Friends</button>
+  <button class="btn" onclick="filterSelection('Graduation Day')">Graduation Day</button>
+  <button class="btn" onclick="filterSelection('UITM')">UITM</button>
+</div>
+
+<p align="center">
+<a href="family.html"><b>PREVIOUS</b></a>
+<a href="hobbies.html"><b>NEXT</b></a>
+</p>
+	
+<!-- Portfolio Gallery Grid -->
+<div class="row">
+  <div class="column Me">
+    <div class="content">
+	<img style="border:5px double black;"  src="images/effa2.jpg" width="100%" alt="Me">
+	<h4><em>ME</em></h4>
+    </div>
+  </div>
+  
+  <div class="column Me">
+    <div class="content">
+	  <img style="border:5px double black;"  src="images/effa1.jpg" width="100%" alt="Me">
+      <h4><em>ME (PRE-CONVO)</em></h4>
+    </div>
+  </div>
+
+  <div class="column Me">
+    <div class="content">
+	  <img style="border:5px double black;"  src="images/effa3.jpg" width="100%" alt="Me">
+      <h4><em>ME</em></h4>
+    </div>
+  </div>
+
+  <div class="column Family">
+    <div class="content">
+	  <img style="border:5px double black;"  src="images/fam2.jpg" width="100%" alt="My Family">
+      <h4><em>BIG FAMILY</em></h4>
+    </div>
+  </div>
+  
+  <div class="column Family">
+    <div class="content">
+	  <img style="border:5px double black;"  src="images/fam1.jpg" width="100%" alt="My Family">
+      <h4><em>FAMILY</em></h4>
+    </div>
+  </div>
+  
+  <div class="column Family">
+    <div class="content">
+	  <img style="border:5px double black;"  src="images/fam3.jpg" width="100%" alt="My Family">
+      <h4><em>BIG FAMILY</em></h4>
+    </div>
+  </div>
+
+  <div class="column Friends">
+    <div class="content">
+	  <img style="border:5px double black;"  src="images/uitmj7.jpg" width="100%" alt="My Friends">
+      <h4><em>WITH FIQA, SHASHA AND AIDA</em></h4>
+    </div>
+  </div>
+  
+  <div class="column Friends">
+    <div class="content">
+	  <img style="border:5px double black;"  src="images/aida.jpg" width="100%" alt="My Friends">
+      <h4><em>WITH AIDA</em></h4>
+    </div>
+  </div>
+  
+  <div class="column Friends">
+    <div class="content">
+	  <img style="border:5px double black;"  src="images/bff3.jpg" width="100%" alt="My Friends">
+      <h4><em>WITH TIRAH AND NISA</em></h4>
+    </div>
+  </div>
+  
+  <div class="column Graduation Day">
+    <div class="content">
+	  <img style="border:5px double black;"  src="images/grad1.jpg" width="100%" alt="Graduation Day">
+      <h4><em>CONVOCATION WITH HANIS</em></h4>
+    </div>
+  </div>
+	
+  <div class="column Graduation Day">
+    <div class="content">
+	  <img style="border:5px double black;"  src="images/grad2.jpg" width="100%" alt="Graduation Day">
+      <h4><em>PRE-CONVO (ZARA, HANIS AND AIN)</em></h4>
+    </div>
+  </div>
+  
+  <div class="column Graduation Day">
+    <div class="content">
+	  <img style="border:5px double black;"  src="images/grad3.jpg" width="100%" alt="Graduation Day">
+      <h4><em>CONVOCATION DAY WITH DAYAH</em></h4>
+    </div>
+  </div>
+  
+  <div class="column UITM">
+    <div class="content">
+	  <img style="border:5px double black;"  src="images/uitm.jpeg" width="100%" alt="UITM">
+      <h4><em>IMS2463A's FAMILY</em></h4>
+    </div>
+  </div>
+  
+  <div class="column UITM">
+    <div class="content">
+	  <img style="border:5px double black;"  src="images/imarc.jpg" width="100%" alt="UITM">
+      <h4><em>IMaRC's FAMILY</em></h4>
+    </div>
+  </div>
+  
+  <div class="column UITM">
+    <div class="content">
+	  <img style="border:5px double black;"  src="images/classmates.jpg" width="100%" alt="UITM">
+      <h4><em>CLASSMATES GIRLS</em></h4>
+    </div>
+  </div>
+  
+<!-- END GRID -->
+</div>
+
+<!-- END MAIN -->
+</div>
+
+<script>
+filterSelection("all")
+function filterSelection(c) {
+  var x, i;
+  x = document.getElementsByClassName("column");
+  if (c == "all") c = "";
+  for (i = 0; i < x.length; i++) {
+    w3RemoveClass(x[i], "show");
+    if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+  }
+}
+
+function w3AddClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    if (arr1.indexOf(arr2[i]) == -1) {element.className += " " + arr2[i];}
+  }
+}
+
+function w3RemoveClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    while (arr1.indexOf(arr2[i]) > -1) {
+      arr1.splice(arr1.indexOf(arr2[i]), 1);     
+    }
+  }
+  element.className = arr1.join(" ");
+}
+
+
+// Add active class to the current button (highlight it)
+var btnContainer = document.getElementById("myBtnContainer");
+var btns = btnContainer.getElementsByClassName("btn");
+for (var i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function(){
+    var current = document.getElementsByClassName("active");
+    current[0].className = current[0].className.replace(" active", "");
+    this.className += " active";
+  });
+}
+</script>
+
+</body>
+</html>

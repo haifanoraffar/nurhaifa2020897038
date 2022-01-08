@@ -1,0 +1,111 @@
+<html>
+	<head>
+		<title>Welcome To My Homepage!</title>
+	</head>
+
+<style>
+body {
+		background-image: url('images/picture.png');
+		background-repeat: no repeat;
+		background-attachment: fixed;
+		background-size: 120%;
+		font-family: Comic Sans MS;
+		text-align: center;
+		border-radius: 50px;
+	 } 
+	 
+a {
+	text-decoration: none;
+	display: inline-block;
+	padding: 1px 1px;
+  }
+  
+</style>
+
+<body>
+
+	<audio controls autoplay>
+    <source src="audio/unstoppable.mp3" type="audio/ogg">
+    </audio>
+	
+	<marquee><em>"HAI ASSALAMUALAIKUM AND WELCOME TO MY PERSONAL WEBSITE. LET's GET TO KNOW MORE ABOUT ME!"</em></marquee>
+	
+	<h1 align="center" style="color:maroon"><font size="15" face="Comic Sans MS">-WELCOME TO MY WEBSITE-</font></h1>
+		
+	<body onload="startTime()">
+
+	<div id="txt" align="center" style="color:blue"></div>
+
+<script>
+function startTime() {
+  const today = new Date();
+  let h = today.getHours();
+  let m = today.getMinutes();
+  let s = today.getSeconds();
+  m = checkTime(m);
+  s = checkTime(s);
+  document.getElementById('txt').innerHTML =  h + ":" + m + ":" + s;
+  setTimeout(startTime, 1000);
+  }
+
+function checkTime(i) {
+  if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
+  return i;
+}
+</script>
+
+	</body>
+	
+	<p><div id="body_content"></div></p>
+	<h2 align="center" style="color:black"><font size="5" face="Comic Sans MS"><u>LIST FOR MENU:</u></font></h2>
+	
+	<table align="center" border="double" width="50%" bgcolor="#CCCC99">
+	
+	<tr>
+		<p><th><a href="myself.html" target="content">ABOUT ME</a></th></p>
+	</tr>	
+	
+	<tr>
+		<p><th><a href="biodata.html" target="content">MY BIODATA PROFILE</a></th></p>
+	</tr>	
+	
+	<tr>
+		<p><th><a href="education.html" target="content">MY EDUCATION</a></th></p>
+	</tr>	
+	
+	<tr>
+		<p><th><a href="family.html" target="content">MY FAMILY</a></th></p>
+	</tr>	
+	
+	<tr>
+		<p><th><a href="gallery.html" target="content">MY GALLERY</a></th></p>
+	</tr>	
+		
+	<tr>
+		<p><th><a href="hobbies.html" target="content">MY HOBBIES</a></th></p>
+	</tr>	
+		
+	<tr>
+		<p><th><a href="bestfriends.html" target="content">MY BESTRIENDS</a></th></p>
+	</tr>	
+			
+	<tr>
+		<p><th><a href="diploma.html" target="content">MY DIPLOMA MEMORY</a></th></p>
+	</tr>	
+	
+	<tr>
+		<p><th><a href="uitmjasin.html" target="content">UITM JASIN's MEMORY</a></th></p>
+	</tr>
+	
+	<tr>
+		<p><th><a href="collection.html" target="content">MY NOVEL COLLECTION</a></th></p>
+	</tr>
+	
+	<tr>
+		<p><th><a href="favouritevideo.html" target="content">MY VIDEO PLAYLIST</a></th></p>
+	</tr>	 
+
+	</table>
+	
+</body>
+</html>
